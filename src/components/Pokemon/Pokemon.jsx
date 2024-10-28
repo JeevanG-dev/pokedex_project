@@ -1,20 +1,17 @@
+import "./pokemon.css";
 
-import './pokemon.css'
-
-
-function Pokemon({name, image}){
-
-return(
+function Pokemon({ name, image }) {
+  return (
     <>
-<div className='pokemon'>
-    {name}
-</div>
-<div>
-    <img src={image} alt="" />
-</div>
-    </>
-)
+      <div className="pokemon">
+        <div>{name}</div>
 
+        <div>
+          <img src={image} alt="" />
+        </div>
+      </div>
+    </>
+  );
 }
 
-export default Pokemon
+export default Pokemon;
