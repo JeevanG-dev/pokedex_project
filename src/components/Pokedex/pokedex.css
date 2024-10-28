@@ -1,0 +1,11 @@
+.pokedex-wrapper{
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+#pokemon-name-search{
+text-align: center;
+letter-spacing: 2px;
+}
