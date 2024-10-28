@@ -25,7 +25,7 @@ const [isloading, setIsLoading] = useState(true)
     const pokeList = poke.data
 
     return {name : pokeList.name, 
-        image: pokeList.sprites.other.dream_world.front_default, 
+        image: (pokeList.sprites.other) ? pokeList.sprites.other.dream_world.front_default : pokeList.sprites.front_shiny,
         types: pokeList.types,
         id: pokeList.id
     
@@ -55,9 +55,13 @@ const [isloading, setIsLoading] = useState(true)
  <div className="pokemon-list-wrapper">
 
     <div>Pokemon List</div>
-{(isloading) ? " downling" : "data downloaded"}
 
-{pokemonList.map((p) => <Pokemon name={p.name} image={p.image}/>)}
+<div className="pokemon-wrapper">
+{(isloading) ? " downling" : 
+pokemonList.map((p) => <Pokemon name={p.name} image={p.image}/>) }
+
+</div>
+
 
  </div>
         </>

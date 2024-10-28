@@ -1,8 +1,12 @@
-function Pokemon({name, image, id}){
+
+import './pokemon.css'
+
+
+function Pokemon({name, image}){
 
 return(
     <>
-<div>
+<div className='pokemon'>
     {name}
 </div>
 <div>
