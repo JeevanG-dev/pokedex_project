@@ -2,15 +2,25 @@
  
   flex-basis: 20%;
   width: max-content;
-  font-size: large;
-  font-style: oblique;
+  font-size:x-large;
+  letter-spacing: 0.2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  
 }
 
 .pokemon > div > img {
  
-  width: 250px;
-  height: 250px;
+  width: 200px;
+  height: 200px;
   margin-left: 20px;
 }
 
 
+.pokemon:hover{
+
+background-color: bisque;
+cursor: pointer;
+}

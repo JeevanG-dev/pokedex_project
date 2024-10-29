@@ -1,17 +1,25 @@
-.pokemon-list-wrapper{
+.pokemon-list-wrapper {
+  margin: 1.5rem auto;
+}
 
-    margin: 1.5rem auto;
-   
+.pokemon-wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 20px;
 
+  justify-content: space-between;
+}
+
+.controls {
+  width: max-content;
+  margin: 1.5rem auto;
+  display: flex;
+  gap: 2rem;
 
 }
 
-.pokemon-wrapper{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 10px;
-    
-  justify-content: space-between;
-  
+.controls > button{
+    padding: 0.2rem 2rem;
+   
 }
