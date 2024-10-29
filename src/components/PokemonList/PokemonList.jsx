@@ -59,8 +59,8 @@ setPreUrl(response.data.previous)
       <div className="pokemon-list-wrapper">
         <div className="pokemon-wrapper">
           {isloading
-            ? " downling"
-            : pokemonList.map((p) => <Pokemon name={p.name} image={p.image} />)}
+            ? " loading...."
+            : pokemonList.map((p) => <Pokemon name={p.name} image={p.image} id={p.id} />)}
         </div>
 
         <div className="controls">
