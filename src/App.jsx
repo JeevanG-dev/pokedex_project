@@ -1,4 +1,5 @@
 
+import { Link } from 'react-router-dom'
 import './App.css'
 import Pokedex from './components/Pokedex/Pokedex'
 import CustomRoutes from './routes/CustomRoutes'
@@ -7,7 +8,14 @@ function App() {
  
   return (
     <>
-<CustomRoutes/>
+  <div className="outer-pokedex">
+  <h1 id="pokemon-name-search">
+    <Link className='link' to="/">Pokedex</Link>
+    </h1>
+    <CustomRoutes/>
+  </div>
+   
+
     </>
   )
 }
