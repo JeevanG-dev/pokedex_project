@@ -21,3 +21,16 @@ div{
     font-size: large;
 }
 
+.types{
+    display: flex;
+    gap: 4rem;
+ 
+}
+
+.types-individual{
+
+padding: 0.5rem 2rem;
+border-radius: 10px;
+background-color: rgb(9, 185, 9);
+color: white;
+}

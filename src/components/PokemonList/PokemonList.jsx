@@ -30,7 +30,7 @@ const [preUrl,setPreUrl] = useState('')
       const pokeList = poke.data;
 
       return {
-        name: pokeList.name,
+        name: pokeList.name.toUpperCase(),
         image: pokeList.sprites.other
           ? pokeList.sprites.other.dream_world.front_default
           : pokeList.sprites.front_shiny,
